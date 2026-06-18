@@ -170,7 +170,6 @@ function handleSubmit(e){
   const name     = document.querySelector('.contact-form input[type="text"]').value.trim();
   const email    = document.querySelector('.contact-form input[type="email"]').value.trim();
   const phone    = document.querySelector('.contact-form input[type="tel"]').value.trim();
-  const interest = document.querySelector('.contact-form select').value.trim();
   const message  = document.querySelector('.contact-form textarea').value.trim();
 
    // Basic validation
