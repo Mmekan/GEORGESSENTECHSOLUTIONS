@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>GeorgessenTechSolutions</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="index.css"/>
+<link rel="stylesheet" href="carousel-additions.css"/>
+</head>
+<body>
+
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Georgessen<span>tech</span><span class="ng">.com</span></a>
+  <ul class="nav-links">
+    <li><a href="#products">Products</a></li>
+    <li><a href="#about">Story</a></li>
+    <li><a href="#impact">Impact</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#preorder" class="nav-cta">Pre-Order</a></li>
+  </ul>
+    <div class="cart-widget">
+    <button id="cart-toggle" class="cart-toggle" aria-label="View your selected products">
+      <span class="cart-icon">🛒</span>
+      <span id="cart-count" class="cart-count">0</span>
+    </button>
+    <div id="cart-panel" class="cart-panel">
+      <div class="cart-panel-header">Your Selections</div>
+      <div id="cart-empty" class="cart-empty">Nothing selected yet — tap <em>Learn More</em> on a product to add it here.</div>
+      <div id="cart-items" class="cart-items"></div>
+      <button id="cart-proceed" class="cart-proceed-btn">Proceed to Pre-Order →</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-flag-stripe"></div>
+  <div class="hero-eyebrow">Engineered for Africa · Invented in Nigeria</div>
+  <h1 class="hero-headline">
+    Built<br>for the<br><span class="accent">Future,</span><br><span class="green-accent">Now.</span>
+  </h1>
+  <p class="hero-sub">
+    Hardware and software solutions purpose-built for Nigeria's unique challenges ranging from infrastructure to everyday life. Real problems, ignored by many. <strong>Real solutions</strong>, delivered to many.
+  </p>
+  <div class="hero-actions">
+    <a href="#products" class="btn-primary">Explore Products</a>
+    <a href="#about" class="btn-ghost">
+      <span class="arrow-circle">→</span>
+      Our Story
+    </a>
+  </div>
+  <div class="hero-scroll-hint">Scroll Down</div>
+</section>
+
+<!-- TICKER -->
+<div id="stats-ticker">
+  <div class="ticker-track" id="ticker-track">
+    <span class="ticker-item">3+ Products in Development</span>
+    <span class="ticker-sep">✦</span>
+    <span class="ticker-item">Nigeria-First Design</span>
+    <span class="ticker-sep">✦</span>
+    <span class="ticker-item">Pre-Orders Open Now</span>
+    <span class="ticker-sep">✦</span>
+    <span class="ticker-item">Solving Real Infrastructure Gaps</span>
+    <span class="ticker-sep">✦</span>
+    <span class="ticker-item">Community Impact Driven</span>
+    <span class="ticker-sep">✦</span>
+    <span class="ticker-item">Awarded Recognition</span>
+    <span class="ticker-sep">✦</span>
+    <span class="ticker-item">Intentional and purpose-built</span>
+    <span class="ticker-sep">✦</span>
+    <span class="ticker-item">Affordable Solutions</span>
+    <span class="ticker-sep">✦</span>
+    <span class="ticker-item">Bridging Ignored Consumer Gaps</span>
+    <span class="ticker-sep">✦</span>
+    <span class="ticker-item">Community Impact Driven</span>
+    <span class="ticker-sep">✦</span>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="section-label">Our Products</div>
+  <h2 class="section-title">Solutions Built to <em>Solve</em> Real Problems</h2>
+  <div class="products-grid">
+
+      <div class="product-card reveal">
+        <div class="product-proto" data-images='["img/water2-nobg.png"]'>
+          <div class="proto-badge">Prototype Ready</div>
+          <span class="proto-placeholder">P01</span>
+          
+        </div>
+        <div class="product-number">01 — PumpAction</div>
+        <div class="product-name">Smart Water Distribution Monitor</div>
+        <div class="product-problem">
+          <div class="product-problem-label">Problem Solved</div>
+          <p>Pump failure and water wastage from overflows are common issues.....<br>leading to costly repairs and water scarcity.</p>
+        </div>
+        <p class="product-desc">PumpAction installs across estate water lines...</p>
+        <a href="#" class="product-cta" data-product="water">Learn More</a>
+      </div>
+    
+      <div class="product-card reveal">
+    <div class="product-proto" data-images='["img/pwr1-nobg.png"]'>
+      <div class="proto-badge" style="background:#008751">Beta testing</div>
+      <span class="proto-placeholder">P02</span>
+    </div>
+    <div class="product-number">02 — AutoChangeover</div>
+    <div class="product-name">Power Management System</div>
+    <div class="product-problem">
+      <div class="product-problem-label">Problem Solved</div>
+      <p>Unstable power supply & supply irregularities in Nigeria causes significant disruptions to businesses and households...</p>
+    </div>
+    <p class="product-desc">AutoChangeover effectively and seamlessly switches between power sources...</p>
+    <a href="#" class="product-cta" data-product="energy">Learn More</a>
+  </div>
+
+    
+
+    <div class="product-card reveal">
+  <div class="product-proto" data-images='[]'>
+    <div class="proto-badge" style="background:#555">In Development</div>
+    <span class="proto-placeholder">W.I.P</span>
+  </div>
+  <div class="product-number">03 — Flautopole</div>
+  <div class="product-name">Automatic Flagpole System</div>
+  <div class="product-problem">
+    <div class="product-problem-label">Problem Solved</div>
+    <p>Automated erection and maintenance of national flagpoles in every official building...</p>
+  </div>
+  <p class="product-desc">Flautopole automates flagpole management for government and public buildings...</p>
+  <a href="#" class="product-cta" data-product="health">Learn More</a>
+</div>
+
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-visual reveal">
+    <div class="author-portrait">
+  <img src="img/fnder-nbg.png" alt="Founder Portrait" class="author-img">
+
+  <div class="author-portrait-inner">FOUNDER</div>
+  <div class="portrait-frame"></div>
+  <div class="portrait-frame-2"></div>
+</div>
+    <div class="author-quote">
+      <p>"Every problem I saw in this country, I wrote down. Then I asked: what if the solution could also come from here?"</p>
+      <cite>— George Essen, Founder</cite>
+    </div>
+  </div>
+  <div class="about-text reveal">
+    <div class="section-label">The Story</div>
+    <h2 class="section-title">A Nigerian Engineer <em>Tired</em> of Importing Solutions</h2>
+  <p>Engr. George Essen is a Nigerian inventor, engineer, and public servant whose life’s work is driven by a deep conviction that Africa’s most transformative innovations must be built from within. 
+      Raised in southern Nigeria and rooted in a family of innovators from Essene, Ikot Abasi Local Government Area of Akwa Ibom State, George Essen developed an early passion for solving practical human problems through technology.
+      He studied Electrical and Electronics Engineering at Bells University of Technology, where his technical foundation was shaped by both theory and hands-on problem solving. Alongside his engineering journey, 
+      he served Nigeria with distinction in the Nigerian Customs Service for over a decade, retiring at the rank of Assistant Comptroller of Customs (Rtd). His years in public service exposed him to systemic challenges across society—experiences that later became fuel for his inventive pursuits.</p>
+  <p>After retiring from service, George Essen formally earned professional recognition as a COREN-certified engineer (Council for the Regulation of Engineering in Nigeria), solidifying his transition from public service into full-scale innovation and engineering leadership.
+      As an inventor, he holds two patent rights, <strong>Mobile Pedestrian Shade</strong> and <strong>Cashier Envelope</strong>, with additional conceptual and functional innovations such as the <strong>Auto Flagpole Device</strong>, all aimed at addressing everyday human and infrastructural challenges. 
+      His work reflects a strong philosophy: innovation must be practical, affordable, and socially impactful.
+      In 2007, his ingenuity gained national and international recognition when he emerged <strong>1st Prize Winner</strong> at the <strong>Best Nigerian Inventor/Innovator Award Competition</strong>, organized by the <strong>World Intellectual Property Organization (WIPO)</strong> and the <strong>National Office for Technology Acquisition and Promotion (NOTAP)</strong> under the Federal Ministry of Science and Technology, Abuja.
+      Today, Engr. George Essen stands as a symbol of homegrown innovation—an engineer, inventor, and visionary who believes that Nigeria’s greatest solutions will be created by Nigerians, for Nigerians, and for the world.
+
+    </p>
+    <div class="author-stats">
+      <div>
+        <div class="author-stat-num">6<span>yrs</span></div>
+        <div class="author-stat-label">Building</div>
+      </div>
+      <div>
+        <div class="author-stat-num">11</div>
+        <div class="author-stat-label">Eng. Team</div>
+      </div>
+      <div>
+        <div class="author-stat-num">3</div>
+        <div class="author-stat-label">Products</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section id="impact">
+  <div class="section-label">Our Reach</div>
+  <h2 class="section-title">Impact Across <em>Every</em> Nigerian State</h2>
+  <canvas id="nigeria-canvas" width="700" height="580"></canvas>
+  <div class="impact-stats-row">
+    <div class="impact-stat reveal">
+      <div class="impact-stat-num">36<span>+</span></div>
+      <div class="impact-stat-label">States Targeted</div>
+    </div>
+    <div class="impact-stat reveal">
+      <div class="impact-stat-num">200<span>k+</span></div>
+      <div class="impact-stat-label">Households to Impact</div>
+    </div>
+    <div class="impact-stat reveal">
+      <div class="impact-stat-num">₦4<span>B+</span></div>
+      <div class="impact-stat-label">Cost Savings Projected</div>
+    </div>
+    <div class="impact-stat reveal">
+      <div class="impact-stat-num">8</div>
+      <div class="impact-stat-label">Pilot States Active</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-label">Early Adopters</div>
+  <h2 class="section-title">What <em>Pilot Users</em> Are Saying</h2>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <p class="testimonial-text">Since installing PumpAction, our water management has never been better. The efficiency gains are remarkable. The pumping machine has lasted longer without needing
+repairs, and we’ve significantly reduced water wastage. It’s a game-changer for our residency and has saved us a lot of money on repairs and utility bills. I love the fact that it’s designed for our specific challenges here in Nigeria. Highly recommend it to any estate manager or homeowner dealing with water issues.</p>
+      </p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">AJ</div>
+        <div>
+          <div class="testimonial-name">Bright Tibu </div>
+          <div class="testimonial-role">Homeowner, Lagos State</div>
+        </div>
+      </div>
+    </div>
+    <!--
+    <div class="testimonial-card reveal">
+      <p class="testimonial-text">PumpAction gave our estate management a level of visibility we never imagined possible at this price point. Leakage reduced from 40% to under 8% in two months. Outstanding work.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">MK</div>
+        <div>
+          <div class="testimonial-name">Musa Kano</div>
+          <div class="testimonial-role">Estate Facilities Manager, Abuja</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal">
+      <p class="testimonial-text">MediTrack solved something we've been dealing with for 11 years. The stockout problem isn't just inconvenient — people die. This solution could genuinely save lives at scale.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">DN</div>
+        <div>
+          <div class="testimonial-name">Dr. Ngozi Okonkwo</div>
+          <div class="testimonial-role">PHC Director, Enugu State</div>
+        </div>
+      </div>
+    </div>
+    -->
+  </div>
+</section>
+
+<!-- PRE-ORDER -->
+<section id="preorder">
+  <div class="section-label">Be First</div>
+  <h2 class="section-title" style="color:var(--white)">Pre-Order Before<br>We Launch</h2>
+  <p>Join the waitlist now and lock in founding-member pricing. Limited slots available per product category. Delivery begins Q3 2025.</p>
+  <a href="#contact" class="btn-white">Secure Your Pre-Order →</a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-info reveal">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-title">Enquiries &<br><em>Pre-Orders</em></h2>
+    <p style="margin-top:28px">Whether you're a business owner, institutional buyer, or early adopter, we'd love to hear from you. Fill the form and our team gets back within 24 hours.</p>
+    <div class="contact-detail">
+      <div class="contact-icon">📍</div>
+      <div>
+        <div class="contact-detail-label">Location</div>
+        <div class="contact-detail-val">511rd BLock 8, Flat 9, Gowon Estate, Lagos, Nigeria</div>
+      </div>
+    </div>
+    <div class="contact-detail">
+      <div class="contact-icon">✉️</div>
+      <div>
+        <div class="contact-detail-label">Email</div>
+        <div class="contact-detail-val">Georgessen1@gmail.com</div>
+      </div>
+    </div>
+    <div class="contact-detail">
+      <div class="contact-icon">📞</div>
+      <div>
+        <div class="contact-detail-label">Phone / WhatsApp</div>
+        <div class="contact-detail-val">+234 813 550 1737</div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-form reveal">
+    <div class="form-group">
+      <label>Full Name</label>
+      <input type="text" placeholder="George Essen"/>
+    </div>
+    <div class="form-group">
+      <label>Email Address</label>
+      <input type="email" placeholder="you@example.com"/>
+    </div>
+    <div class="form-group">
+      <label>Phone / WhatsApp</label>
+      <input type="tel" placeholder="+234 ..."/>
+    </div>
+    <div class="form-group">
+      <label>I'm interested in</label>
+        <div id="interest-chips" class="interest-chips">
+        <span class="interest-empty-msg">No products selected — <a href="#products">browse products</a> and tap "Learn More" to add them, or just describe your enquiry below.</span>
+
+        <!-- <select>
+          <option value="">— Select Product —</option>
+          <option>EnergyCore — Off-Grid Power System</option>
+          <option>PumpAction — Water Distribution Monitor</option>
+          <option>MediTrack — Healthcare Supply Platform</option>
+          <option>General Enquiry / Partnership</option>
+        </select> -->
+    </div>
+    <div class="form-group">
+      <label>Message</label>
+      <textarea placeholder="Tell us about your need, volume, or any question..."></textarea>
+    </div>
+    <button class="form-submit" onclick="handleSubmit(event)">Send Enquiry →</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo">Georgessen<span>TechSOlutions</span></a>
+      <p>Engineering solutions for Nigeria's infrastructure gaps. Built here. For here. By us.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#preorder">Pre-Order</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="#products">PumpAction</a></li>
+        <li><a href="#products">AutoChangeover</a></li>
+        <li><a href="#products">FLautopole</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#">Twitter / X</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 GeorgessenTechSolutions. All rights reserved.</p>
+    <div class="footer-flag">
+      Made with pride in
+      <div class="flag-block">
+        <div></div><div></div><div></div>
+      </div>
+      Nigeria
+    </div>
+  </div>
+</footer>
+
+<!-- PRODUCT MODAL -->
+<div id="product-modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <div>
+        <span id="modal-product-number" class="modal-number"></span>
+        <h2 id="modal-product-name"></h2>
+      </div>
+      <button id="modal-close" class="modal-close">✕</button>
+    </div>
+    
+    <div class="modal-body">
+      <div id="modal-proto" class="modal-proto">
+        <!-- Proto image / placeholder will go here if needed -->
+      </div>
+      
+      <div class="modal-problem">
+        <div class="product-problem-label">Problem Solved</div>
+        <p id="modal-problem-text"></p>
+      </div>
+      
+      <div class="modal-desc">
+        <p id="modal-full-desc"></p>
+      </div>
+      
+      <!-- You can add more sections here (features, specs, etc.) -->
+    </div>
+    
+    <div class="modal-footer">
+      <button id="modal-preorder-btn" class="btn-primary modal-preorder-btn">Pre-Order This Product →</button>
+      <p id="modal-dev-note" class="modal-dev-note">This product is still in development — pre-orders aren't open yet. Check back soon!</p>
+    </div>
+  </div>
+</div>
+
+<script src="product.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
