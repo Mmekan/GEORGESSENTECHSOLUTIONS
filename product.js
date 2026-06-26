@@ -32,20 +32,20 @@ const productsData = {
     proto: "P02",
     badge: "Prototype Ready",
     images: ["img/pwr1-nobg.png", "img/pwr2-nobg.png"], // add paths like ["img/energy1.jpg", "img/energy2.jpg"]
-    problem: "Unstable power supply & supply irregularities in Nigeria causes significant disruptions to businesses and households, costing billions in generator fuel and spoilt goods.",
+    problem: "Unstable power supply & supply irregularities in Nigeria cause significant disruptions to businesses and households, costing billions in generator and consequential damages.",
     fullDesc: `
-      <p>AutoChangeover is a smart power management system specifically engineered for Nigeria's erratic power grid. It detects outages in milliseconds and switches seamlessly between NEPA, generator, and solar/battery — with zero manual intervention.</p>
+      <p>AutoChangeover is a smart power management system specifically engineered as a low-cost solution to Nigeria's erratic grid power supply. It detects outages in milliseconds and switches seamlessly between NEPA, Generator, and Inverter with zero manual intervention.</p>
       <h3>Key Features</h3>
       <ul>
-        <li>Ultra-fast 8ms automatic switchover between power sources</li>
-        <li>Handles voltage fluctuations from 90V to 300V without damage</li>
-        <li>Smart load prioritization for critical appliances</li>
-        <li>Remote monitoring via mobile app (iOS & Android)</li>
-        <li>Compatible with solar, inverter, and generator setups</li>
+        <li>Seamless power transfer  between sources; NEPA, Gen and Inverter.</li>
+        <li>Surge and under-voltage protection.</li>
+        <li>Auto Generator start and off</li>
+        <li>Manual remote gen stop</li>
+        <li>Preset Generator stop times</li>
       </ul>
       <h3>Technical Specifications</h3>
       <ul>
-        <li>Capacity: 5kVA / 8kVA</li>
+        <li>Capacity: 60Amps- 120Amps</li>
         <li>Battery: Lithium & Tubular compatible</li>
         <li>Input: Single phase, 50Hz</li>
         <li>Warranty: 2 years</li>
