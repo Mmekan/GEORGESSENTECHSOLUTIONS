@@ -8,7 +8,7 @@ const productsData = {
     shortname: "PumpAction",
     proto: "P01",
     badge: "Prototype Ready",
-    images: ["img/water1-nobg.png", "img/water2-nobg.png"], // add more paths as needed
+    images: ["img/water1-nobg.png", "img/water2-nobg.png", "pa3.jpeg", "pa4.jpeg"], // add more paths as needed
     problem: "Pump failure and water wastage from overflows are common issues in Nigerian borehole systems, leading to costly repairs and water scarcity.",
     fullDesc: `
       <p>PumpAction is an automated borehole control device specifically designed to address all fundamental issues of borehole systems, domestic and industrial.</p>
